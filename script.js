@@ -129,8 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
             doc.setTextColor(170, 209, 209);
             doc.text("Personalized Course Plan".toUpperCase(), 83, 31);
 
-            doc.setDrawColor(170, 209, 209); // Set the color for the line (optional, you can use any color)
-            doc.setLineWidth(0.7); // Set the line width (optional, adjust as needed)
+            doc.setDrawColor(170, 209, 209);
+            doc.setLineWidth(0.7);
             doc.line(20, 34, 190, 34);
 
             // Set fontsize for content
@@ -171,10 +171,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("course-plan").classList.add("visible");
 
         setTimeout(function() {
-            coursePlanDiv.style.height = "auto";  // Allow height to expand
-            coursePlanDiv.style.opacity = "1";  // Make it visible
-            coursePlanDiv.style.visibility = "visible";  // Set visibility to visible
-        }, 0); // Run immediately after the content is added
+            coursePlanDiv.style.height = "auto"; 
+            coursePlanDiv.style.opacity = "1";
+            coursePlanDiv.style.visibility = "visible";
+        }, 0);
     });
 });
 
