@@ -12,7 +12,7 @@ body {
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin: 0 auto; /* Centers the card in the available space */
+    margin: 0 auto;
     margin-top: 100px;
     align-items: center;
     justify-content: center;
@@ -33,14 +33,14 @@ body {
 .card-body {
     display: flex;
     align-items: center;
-    justify-content: left; /* Spreads elements evenly */
+    justify-content: left;
     width: 70%;
     max-width: 600px;
     min-width: 290px;
-    padding: 20px; /* Add padding to prevent text from touching edges */
+    padding: 20px;
     background-color: #ccccb4;
     border-radius: 25px; 
-    flex-wrap: wrap; /* Prevents overflow issues on smaller screens */
+    flex-wrap: wrap;
 }
 
 .card-title {
@@ -64,7 +64,6 @@ body {
     margin-left: 10px;
 }
 
-/* Custom styling for the select dropdowns */
 .date-select select {
     padding: 5px;
     font-size: 16px;
@@ -128,13 +127,13 @@ body {
 }
 
 .course-plan.visible {
-    height: auto; /* Set the height to auto once visible */
+    height: auto; 
     padding: 10px;
 }
 
 .header-row {
     display: flex;
-    justify-content: space-between; /* Distribute space between labels */
+    justify-content: space-between;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -157,8 +156,8 @@ body {
 
 .all-courses p {
     display: flex;
-    justify-content: space-between; /* Space out the course name and date */
-    padding: 2px; /* Add some padding between lines */
+    justify-content: space-between; 
+    padding: 2px; 
     font-size: 1.1rem;
     margin: 0;
     font-weight: 600;
@@ -170,26 +169,26 @@ p.column-tag {
 }
 
 .all-courses p span {
-    flex-shrink: 0; /* Prevents the date from shrinking */
+    flex-shrink: 0;
     padding-right: 0;
-    text-align: right; /* Align date to the right */
+    text-align: right;
 }
 
 .download-button {
-    background: none;           /* Remove background */
-    border: none;               /* Remove border */
+    background: none;
+    border: none;
     margin-top: 10px;
-    padding: 0;                 /* Remove padding */
-    font: inherit;              /* Inherit the font style from the parent */
-    color: #c46464;             /* Link-like color */
+    padding: 0;
+    font: inherit;
+    color: #c46464;
     cursor: pointer; 
     font-family: "Noto Sans", sans-serif;
-    font-weight: 600;          /* Change cursor to pointer to show it's clickable */
+    font-weight: 600;
 }
 
 .download-button:hover {
-    color: #aa5151;             /* Darker blue on hover */
-    text-decoration: none;      /* Remove underline on hover */
+    color: #aa5151;
+    text-decoration: none;
 }
 
 
@@ -231,20 +230,20 @@ p.column-tag {
         align-items: flex-end;
         font-size: 0.9rem;
         justify-content: space-between;
-        gap: 10px; /* Add spacing between name and date */
+        gap: 10px;
     }
     
     .all-courses p span:first-child {
-        flex: 1; /* Allows it to grow but prevents pushing */
-        min-width: 0; /* Prevents unwanted shrinking issues */
-        max-width: 70%; /* Prevents it from pushing the date */
+        flex: 1;
+        min-width: 0;
+        max-width: 70%;
         word-wrap: break-word;
-        text-align: left; /* Allows wrapping if needed */
+        text-align: left;
     }
     
     .all-courses p span:last-child {
-        flex-shrink: 0; /* Prevents date from being pushed */
-        white-space: nowrap; /* Keeps date on the same line */
+        flex-shrink: 0;
+        white-space: nowrap;
         text-align: right;
     }
 }
